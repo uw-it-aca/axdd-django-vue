@@ -1,6 +1,6 @@
 if [ "$ENV"  = "localdev" ]
 then
 
-  . /scripts/app_deploy.sh
+  python manage.py migrate
 
 fi

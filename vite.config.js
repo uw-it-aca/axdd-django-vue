@@ -32,4 +32,12 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./app_name_vue", import.meta.url)),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: ["global-builtin", "import"], // silence bootstrap5 related deprecations
+      },
+    },
+  },
 });

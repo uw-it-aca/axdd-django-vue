@@ -126,11 +126,12 @@ import { formatPhoneNumber } from "@/utils/format";
 
 export default {
   name: "PagesCustomize",
-  inject: ["mq"],
+
   components: {
     DefaultLayout,
     HelloWorld,
   },
+  inject: ["mq"],
   // setup() is needed for Composition API
   setup() {
     // instantiate composable
